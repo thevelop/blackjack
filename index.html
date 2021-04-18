@@ -5,24 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto Simple Blackjack con javascript para el posgrado Fullstack</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <header>
     <h1>Proyecto Blackjack javascript</h1>
     <h2 id="resultado"></h2>
-    <div id="cartas-banca"></div>
-    <div id="cartas-jugador"></div>
+    </header>
     <form name="blackjack" onsubmit="nuevaPartida(); return false;">
         <input type="submit" id="boton-nueva-partida" value="Jugar">
         <input type="button" id="mas-cartas" value="Más cartas" onclick="nuevaCarta();" disabled>
         <input type="button" id="plantarse" value="plantarse" onclick="finalizar();" disabled>
         <div id="dinero-jugador"></div>
-        <input type="number" id="apuesta" value="10" min="1" max="100">
+        <label for="apuesta">Apuesta:
+            <input type="number" id="apuesta" value="10" min="1" max="100">
+        </label>
     </form>
 
-    <h3>Puntuación:</h3>
-     <div id="puntuacion-jugador"></div>
-     <div id="puntuacion-banca"></div>
+    <div class="contenedor-cartas">
+    <div id="cartas-banca">
+   
+    </div>
+    <div id="cartas-jugador">
 
+    </div>
+    </div>
+    
+
+    <div class="contenedor-puntuacion">
+        <h3>Puntuación:</h3>
+            <div class="contenedor-puntos">
+               <div id="puntuacion-banca">
+                <h3>Puntuacion Banca:</h3>
+                <h2>-</h2>
+               </div>
+                <div id="puntuacion-jugador">
+                    <h3>Puntuacion Jugador:</h3>
+                    <h2>-</h2>
+                </div>
+            </div>
+    </div>
     <!--<script src="scripts.js"></script>//-->
     <script src="utilidades/utilidades.js"></script>
 </body>
