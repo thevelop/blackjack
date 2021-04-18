@@ -1,0 +1,25 @@
+{
+  "name": "blackjac-posgrado-fullstack",
+  "version": "1.0.0",
+  "description": "Proyecto de blackjack sencillo con javascript ES6 para el posgrado fullstack",
+  "main": "scripts.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thevelop/blackjack.git"
+  },
+  "keywords": [
+    "ES6",
+    "Javascript",
+    "Play",
+    "Cards"
+  ],
+  "author": "Thevelop",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thevelop/blackjack/issues"
+  },
+  "homepage": "https://github.com/thevelop/blackjack#readme"
+}

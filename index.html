@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Simple Blackjack con javascript para el posgrado Fullstack</title>
+</head>
+<body>
+    <h1>Proyecto Blackjack javascript</h1>
+    <h2 id="resultado"></h2>
+    <div id="cartas-banca"></div>
+    <div id="cartas-jugador"></div>
+    <form name="blackjack" onsubmit="nuevaPartida(); return false">
+        <input type="submit" id="boton-nueva-partida" valor="Jugar">
+        <input type="button" id="mas-cartas" value="Más cartas" onclick="nuevaCarta()" disabled>
+        <input type="button" id="plantarse" value="plantarse" onclick="plantarse();" disabled>
+    </form>
+</body>
+</html>
