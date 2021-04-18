@@ -11,7 +11,7 @@ let banca = {
     puntuacion: 0
 }
 
-let tablero = {
+const tablero = {
         tableroArr: [],
         inicializar: function() {
             let palosArray, valorArray, p, v;
